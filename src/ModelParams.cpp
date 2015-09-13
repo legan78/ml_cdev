@@ -2,6 +2,7 @@
 
 
 namespace ml {
+
     NormalDist::NormalParams NormalDist::NormalParams::init_params(const MatrixXd& mean, const MatrixXd& S) {
         NormalParams params;
 

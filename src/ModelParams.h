@@ -3,6 +3,8 @@
 
 #include <eigen3/Eigen/Dense>
 #include <cmath>
+#include <iterator>
+
 
 using namespace Eigen;
 
@@ -102,7 +104,58 @@ namespace ml {
          * How to initialize the parameters for the algorithm.
          */
         unsigned int initialState;
+    };
 
+    /*
+     * Container for statistical model parameters.
+     */
+  template<typename Params>
+    class ModelParams {
+    public:
+
+        /**
+         * @brief Default constructor
+         */        
+        ModelParams();
+
+        /**
+         * @brief Copy constructor.
+         */
+        ModelParams(const ModelParams& mp);
+
+        /**
+         * @brief Asignation operator.
+         */
+        ModelParams& operator=(const ModelParams& mp);
+
+        /**
+         * @brief Destructor.
+         */
+        ~ModelParams();
+
+        /**
+         * @brief Access element operator.
+         * @param index Index to access in the vector.
+         */
+        const Params& operator[](unsigned int index)const;
+
+        /**
+         * @brief Access element operator.
+         * @param index Index to access in the vector.
+         */
+        Params& operator[](unsigned int index);
+
+        /**
+         * @brief Get the size of elements in the container.
+         */
+        size_t size()const;
+
+    protected:
+
+        /*
+         * Vector of parameters.
+         */
+        std::vector<Params> params;
     };
 }
 
