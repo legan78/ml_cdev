@@ -9,7 +9,7 @@ namespace ml {
   /**
    * @brief Statistical model interface
    */
-  template<typename ParamType, unsigned int d=1>
+  template<typename ParamType, unsigned int d>
     class StatsModel {
     public:
 
