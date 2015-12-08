@@ -1,5 +1,6 @@
 #ifndef _ML_TYPE_MODEL_H_
 #define _ML_TYPE_MODEL_H_
+
 #include "stats.h"
 #include <stdlib.h>
 #include "common.h"

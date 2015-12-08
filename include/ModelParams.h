@@ -1,6 +1,7 @@
 #ifndef MODEL_PARAMS_H
 #define MODEL_PARAMS_H
 
+#include <vector>
 #include <eigen3/Eigen/Dense>
 #include <cmath>
 #include <iterator>
