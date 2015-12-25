@@ -1,7 +1,7 @@
 #ifndef _ML_TYPE_MODEL_H_
 #define _ML_TYPE_MODEL_H_
 
-#include "stats.h"
+#include "distributions.h"
 #include <stdlib.h>
 #include "common.h"
 #include "dbgLogger.h"
