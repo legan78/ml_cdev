@@ -9,6 +9,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+#include "dbgLogger.h"
 
 // Package to generate faster combinations
 #include <gsl/gsl_combination.h>
