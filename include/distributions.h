@@ -1,7 +1,7 @@
 #ifndef _DISTRIBUTIONS_H_
 #define _DISTRIBUTIONS_H_
 
-#include <opencv.hpp>
+#include <opencv2/opencv.hpp>
 #include <chrono>
 #include <random>
 
